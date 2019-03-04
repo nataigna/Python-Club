@@ -1,0 +1,24 @@
+{%extends 'base.html'%}
+
+{%block content%}
+<h2>Resource</h2>
+<table class='table'>
+    <tr>
+        <th> Resource name</th>
+        <th> Resource type</th>
+        <th> Resourse url</th>
+        
+    </tr>
+    {% for item in resource_list %}
+    <tr>
+        <td>{{item.resourcename}}</td>
+        <td>{{item.resourcetype}}</td>
+        <td>{{item.resourceurl}}</td>
+        
+    </tr>
+    {%endfor%}
+</table>
+
+
+
+{%endblock%}

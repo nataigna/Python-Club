@@ -1,0 +1,24 @@
+{%extends 'base.html'%}
+
+{%block content%}
+<h2>Meeting</h2>
+<table class='table'>
+    <tr>
+        
+        <th> Meeting title</th>
+        <th> Meeting date</th>
+        <th> Meeting agenda</th>
+    </tr>
+    {% for item in meeting_list %}
+    <tr>
+        
+        <td>{{item.meetingtitle}}</td>
+        <td>{{item.meetingdate}}</td>
+        <td>{{item.agenda}}</td>
+    </tr>
+    {%endfor%}
+</table>
+
+
+
+{%endblock%}

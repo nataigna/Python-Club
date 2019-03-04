@@ -29,7 +29,7 @@ class MeetingMinuted(models.Model):
 class Resource(models.Model):
     resourcename=models.CharField(max_length=255)
     resourcetype=models.CharField(max_length=255)
-    resourseurl=models.URLField()
+    resourceurl=models.URLField(null=True, blank=True)
     userid=models.ForeignKey(User,on_delete=models.CASCADE)
     description=models.TextField()
 
